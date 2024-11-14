@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  height: 240px;
+  outline: 4px solid #ccc;
+}
+
+.pixel {
+  outline: 1px solid #ccc;
+}
