@@ -1,17 +1,47 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Sour Gummy";
 }
 
-.grid {
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.sketch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 240px;
-  height: 240px;
-  outline: 4px solid #ccc;
+  width: 320px;
+  height: 320px;
+  outline: 1px solid #ccc;
+  cursor: crosshair;
 }
 
-.pixel {
+.sketch .pixel {
+  user-select: none;
   outline: 1px solid #ccc;
+  transition: 0.15s all linear;
+}
+
+.sketch .custom {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #1e90ff;
 }
