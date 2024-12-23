@@ -32,6 +32,7 @@ body {
 }
 
 .sketch .pixel {
+  flex: 1 auto;
   user-select: none;
   outline: 1px solid #ccc;
   transition: 0.15s all linear;
